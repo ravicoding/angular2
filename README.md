@@ -6,7 +6,7 @@ Few reuseble commponents I'm trying as part of language understanding.
 
 Intended to write single component for all types of input activities
 
-``::``      
+``
 export class MultiInputComponent {
 
     inputData:string="";
@@ -28,7 +28,7 @@ export class MultiInputComponent {
     }
 
 }
-``::``    
+``    
 
 ##ivar-grid
 
