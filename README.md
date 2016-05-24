@@ -8,7 +8,6 @@ Intended to write single component for all types of input activities
 
 <code>
 export class MultiInputComponent {
-
     inputData:string="";
 
     bsData:string[] = [
@@ -26,7 +25,6 @@ export class MultiInputComponent {
             this.inputData = event.target.value;
         }
     }
-
 }
 </code> 
 
