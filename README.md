@@ -5,7 +5,7 @@ Few reuseble commponents I'm trying as part of language understanding.
 ##MultiInputComponent
 
 Intended to write single component for all types of input activities
-
+{
 export class MultiInputComponent {
 
     inputData:string="";
@@ -28,12 +28,12 @@ export class MultiInputComponent {
 
 }
 
-
+}
 
 ##ivar-grid
 
 Simple grid component
-
+{
 /**
  * Created by narer on 5/19/2016.
  */
@@ -92,4 +92,5 @@ class GenerateMockTable {
     generateRows() {
 
     }
+}
 }
