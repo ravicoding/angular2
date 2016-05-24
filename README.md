@@ -33,6 +33,7 @@ export class MultiInputComponent {
 
 ##ivar-grid
 
+<code>
 Simple grid component
 {
 /**
@@ -95,3 +96,4 @@ class GenerateMockTable {
     }
 }
 }
+</code>
