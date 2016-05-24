@@ -28,7 +28,6 @@ export class MultiInputComponent {
     }
 
 }
-
 </code>      
 
 ##ivar-grid
