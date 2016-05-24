@@ -1,0 +1,21 @@
+
+
+<div class="ivar-grid-css">
+
+    <h1> Grid Component</h1>
+    <table class="table">
+        <thead>
+        <th *ngFor="#col of cols" style="width: {{col.width}}px"> {{col.name}}</th>
+
+        </thead>
+        <tbody>
+
+        <tr *ngFor="#row of rows">
+            <td *ngFor="#col of cols"> {{row[col.id]}}</td>
+
+        </tr>
+        </tbody>
+
+    </table>
+
+</div>
