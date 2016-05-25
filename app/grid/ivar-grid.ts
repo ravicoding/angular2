@@ -3,6 +3,7 @@
  */
 
 import {Component} from 'angular2/core';
+import {MockTableService} from './ivar-service'
 
 @Component({
     selector: 'ivar-grid',
@@ -14,30 +15,30 @@ import {Component} from 'angular2/core';
     }
     table {
         border : 1px solid #ddd;
+         height:500px;
      }
      th{
      height: 35px;
-      padding-left: 10px;
+     background-color: #b1b1b1;
+     padding-left: 10px;
      }
   `]
 })
 
-
+/**
+ *  IvarGrid
+ */
 export class IvarGridComponent {
     public rows = [];
     public cols:Column[] = [];
+    private mockTableService:MockTableService = new MockTableService();
+
     constructor() {
-        this.cols.push(new Column('id','ID',300));
-        this.cols.push(new Column('name','Name',500));
-        this.generateMockData();
+        this.cols.push(new Column('id','ID',150));
+        this.cols.push(new Column('name','Name',300));
+        this.cols.push(new Column('data','Data',400))
+        this.rows = this.mockTableService.generateMockData();
     }
-
-    generateMockData() {
-        for(let i=0; i < 100;++i){
-            this.rows.push({id:Math.floor((Math.random() * 10000) + 1),name:'abc'+i});
-        }
-    }
-
 }
 
 class Column {
@@ -51,12 +52,6 @@ class Column {
     width:number;
 }
 
-class GenerateMockTable {
-
-    generateRows() {
-
-    }
-}
 
 
 
